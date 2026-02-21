@@ -72,12 +72,6 @@ First, we create the configuration file on the Server :
 
 
 Place these values inside the file and customize them : <br>
-The values you are allowed to customize, in order, are: mode, local, remote, and addresses. <br>
-- mode → used to select the tunnel method. <br>
-- local → enter the IP of your current server here. <br>
-- remote → enter the IP of the remote server here. <br>
-- addresses → this is the local IP you are creating. You can change it if you are familiar with it; if not, do not modify it.
-
 
 <pre><code>network:
   version: 2 
