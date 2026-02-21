@@ -15,7 +15,7 @@ Of course, it’s worth noting that all these capabilities only hold if your loc
 
 ## Before You Install
 > The installation of this tunnel is completely manual there’s no ready made installation script involved. You’ll need to go through the setup steps yourself and configure both servers (`remote` and `client`)      according to the instructions provided below. Don’t worry it’s simpler than you might think.
-> This tunnel ultimately gives you a local IP in fact, two “non real” IPs that only the two defined servers recognize, and only they know which real IP is hidden behind them. In total, you can create two types of > IP addresses: `IPv4` and `IPv6`.
+> This tunnel ultimately gives you a `local IP` in fact, two “non real” IPs that only the two defined servers recognize, and only they know which real IP is hidden behind them. In total, you can create two types of > IP addresses: `IPv4` and `IPv6`.
 > This entirely depends on the mode you choose:
 > - `GRE` and `IPIP` both create only local `IPv4` addresses.
 > - `SIT` can only provide a local `IPv6` address.
