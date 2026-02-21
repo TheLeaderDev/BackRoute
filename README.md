@@ -51,7 +51,9 @@ sudo apt-get install iproute2 -y
 sudo mkdir -p /root/backroute
 echo -e '\e[32mPackages & prerequisites installed\e[0m'
 ```
-#### IPV4 :
+
+
+### IPV4 :
 <details dir="ltr">
 <summary>GRE Method</summary> <br>
   
@@ -105,6 +107,22 @@ To apply the changes on both servers, run the following command. After a reboot,
 sudo reboot
 </code></pre>
 
+</details
+
+<br> 
+
+<details dir="ltr">
+<summary>IPIP Method</summary> <br>
+...
+</details
+  
+<br>
+
+### IPV6 :
+
+<details dir="ltr">
+<summary>SIT Method</summary> <br>
+...
 </details
 
 <br> <br> 
