@@ -105,3 +105,64 @@ sudo reboot
 </code></pre>
 
 </details
+
+<br> <br> 
+
+## Creating a System (Mandatory)
+
+#### On both servers, first run the following command to create the service file :
+
+```
+sudo nano /etc/systemd/system/backroute.service
+```
+First, place the following contents directly into the file without making any changes, then press Ctrl + X + Y :
+
+```
+[Unit]
+Description=BackRoute GRE Tunnel Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/backroute/backroute-start.sh
+Restart=always
+RestartSec=3
+LimitNOFILE=1048576
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Now enter the following command to create the BackRoute service start file :
+
+```
+sudo nano /root/backroute/backroute-start.sh
+```
+Place the following contents into the file, then press Ctrl + X + Y :
+
+```
+#!/bin/bash
+sudo netplan apply
+```
+Give the file the necessary permissions :
+
+```
+sudo chmod +x /root/backroute/backroute-start.sh
+```
+Enable the service :
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable backroute.service
+sudo systemctl start backroute.service
+echo -e '\e[32mBackRoute successfully created\e[0m'
+```
+
+## Creating a Cron Job (Optional)
+
+By running the following command, a 10-minute cron job will be automatically set up :
+
+```
+(crontab -l 2>/dev/null; echo "*/10 * * * * systemctl restart backroute.service") | crontab -
+echo -e '\e[32mCron job successfully created\e[0m'
+```
