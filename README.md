@@ -11,8 +11,6 @@ you can combine it with advanced tunneling tools and Port Forward setups to buil
 Keep in mind that these capabilities only work if your local IPs are not blocked by ISPs, network routers, or filtering systems.
 
 ## Features
-## Features
-
 - **Local IP–Based Tunnel** <br> 
   The tunnel is established through locally created IPs that are only recognized by the two defined servers. Each side knows the real IP behind the virtual one.
 - **Multiple Tunnel Modes**  <br>
