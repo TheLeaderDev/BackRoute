@@ -55,15 +55,40 @@ First, we create the configuration file on the Server :
 <pre><code>sudo nano /etc/netplan/BackRoute.yaml
 </code></pre>
 
+
+Place these values inside the file and customize them : <br>
+The values you are allowed to customize, in order, are: mode, local, remote, and addresses. <br>
+- mode → used to select the tunnel method. <br>
+- local → enter the IP of your current server here. <br>
+- remote → enter the IP of the remote server here. <br>
+- addresses → this is the local IP you are creating. You can change it if you are familiar with it; if not, do not modify it.
+
+
 <pre><code>network:
-  version: 2 #Netplan v2 (do not modify)
+  version: 2 
+  tunnels:
+    BackRoute:
+      mode: gre 
+      local: 0.0.0.0
+      remote: 0.0.0.0
+      addresses:
+        - 10.10.10.1/30
+</code></pre>
+
+Now, do the same exact configuration file setup for the opposite server as well.
+
+<pre><code>sudo nano /etc/netplan/BackRoute.yaml
+</code></pre>
+
+<pre><code>network:
+  version: 2
   tunnels:
     BackRoute:
       mode: gre
-      local: <IP-SERVER>
-      remote: <IP-REMOTE>
+      local: 0.0.0.0
+      remote: 0.0.0.0
       addresses:
-        - 10.10.10.1/30
+        - 10.10.10.2/30
 </code></pre>
 
 </details
