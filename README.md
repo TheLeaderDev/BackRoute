@@ -1,2 +1,2 @@
 # BackRoute
- BackRoute – lightweight and reliable IPv4/IPv6 server-to-server tunnel solution using GRE/IPIP/SIT, designed for secure, persistent connectivity across networks.
+Welcome to the BackRoute project! BackRoute is a lightweight and reliable solution to create a tunnel between two servers with IPv4 and IPv6, using GRE, IPIP, or SIT. This project is designed to build a secure and stable connection between servers across different networks, bypass restrictions, and keep your data transfer fast and steady. In this README, you’ll find step-by-step instructions for installing, configuring, and running BackRoute, including details on tunnel modes and how to run the tunnel continuously as a service without interruptions.
