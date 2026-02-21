@@ -19,4 +19,11 @@ Of course, it’s worth noting that all these capabilities only hold if your loc
 > This entirely depends on the mode you choose:
 > - `GRE` and `IPIP` both create only local `IPv4` addresses.
 > - `SIT` can only provide a local `IPv6` address.
-> If I had to recommend one mode, I would definitely suggest GRE.
+
+> If I had to recommend one of the modes, I would definitely suggest GRE.
+> However, as mentioned earlier, the final choice entirely depends on your server’s datacenter, ISP routing policies, intermediate router configurations, and the filtering conditions in your network.
+> In general, the rules and restrictions can vary significantly from one country or network to another, and only through your own testing and evaluation can you determine the most optimal setup.
+
+> I will divide the installation steps into two main categories:
+> IPv4 and IPv6
+> Each category has its own steps depending on the method you choose, and you can follow only the steps related to your selected method.
