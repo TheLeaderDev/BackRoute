@@ -9,6 +9,14 @@ Of course, it’s worth noting that all these capabilities only hold if your loc
 - **Insane Speed & Reliability :** In most tests, the tunnel speed has been really high, though of course it depends on the datacenter, server, ISP restrictions, routers, and filtering systems. Overall, the speed is seriously awesome and trustworthy.
 - **Layer 3 Network Tunnel :** Provides a secure path for data transfer between local IPs on the client server and the remote server.
 - **Multiple Tunnel Modes :** Supports GRE, IPIP, and SIT, so you can pick the mode that fits your needs.
-- **No Default Port Forwarding :** The tunnel only provides a path between IPs and doesn’t include port forwarding—but that doesn’t stop your creativity.
+- **No Default Port Forwarding :** The tunnel only provides a path between IPs and doesn’t include port forwarding but that doesn’t stop your creativity.
 - **Composable & Flexible :** You can combine BackRoute with other tunneling tools and Port Forward setups to build a powerful and flexible system that goes beyond the limits of a simple Layer 3 tunnel.
 - **Reliability & Persistence :** Sometimes combining BackRoute with other tools can literally bring something back to life !!. You have two local IPs to play with—so don’t be afraid to mix things up and unleash your creativity.
+
+## Before You Install
+> This tunnel ultimately gives you a local IP in fact, two “non-real” IPs that only the two defined servers understand,
+> and only they know what real IP is hidden behind them. In total, you can create two types of IP addresses: IPv4 and IPv6.
+> This completely depends on the mode you choose:
+> GRE and IPIP both create only local IPv4 addresses.
+> SIT can only provide a local IPv6 address.
+> If I had to recommend one mode, I would definitely suggest GRE.
