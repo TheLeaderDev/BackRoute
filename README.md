@@ -4,3 +4,11 @@ Welcome to the `BackRoute` project! BackRoute is a lightweight and reliable solu
 BackRoute creates a Layer 3 network tunnel that can establish a connection between a client server and a remote server using different modes with local IPs. By default, this tunnel doesn’t support Port Forwarding and simply provides a secure path for data transfer between the IPs. But this is where your creativity comes in !! you can combine BackRoute with advanced tunneling tools and Port Forward setups to build a flexible and powerful system that goes beyond the limitations of a simple Layer 3 tunnel. Sometimes, combining BackRoute with tools that seem broken can work like a charm.
 
 Of course, it’s worth noting that all these capabilities only hold if your local IPs on the servers aren’t blocked by ISPs, network routers, or filtering systems.
+
+## Features
+- **Insane Speed & Reliability :** In most tests, the tunnel speed has been really high, though of course it depends on the datacenter, server, ISP restrictions, routers, and filtering systems. Overall, the speed is seriously awesome and trustworthy.
+- **Layer 3 Network Tunnel :** Provides a secure path for data transfer between local IPs on the client server and the remote server.
+- **Multiple Tunnel Modes :** Supports GRE, IPIP, and SIT, so you can pick the mode that fits your needs.
+- **No Default Port Forwarding :** The tunnel only provides a path between IPs and doesn’t include port forwarding—but that doesn’t stop your creativity.
+- **Composable & Flexible :** You can combine BackRoute with other tunneling tools and Port Forward setups to build a powerful and flexible system that goes beyond the limits of a simple Layer 3 tunnel.
+- **Reliability & Persistence :** Sometimes combining BackRoute with other tools can literally bring something back to life !!. You have two local IPs to play with—so don’t be afraid to mix things up and unleash your creativity.
