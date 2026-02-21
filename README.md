@@ -27,3 +27,43 @@ Of course, it’s worth noting that all these capabilities only hold if your loc
 > I will divide the installation steps into two main categories:
 > IPv4 and IPv6
 > Each category has its own steps depending on the method you choose, and you can follow only the steps related to your selected method.
+
+## Installation and Configuration
+#### First, install the general initial prerequisites :
+```
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install netplan.io -y
+sudo apt-get install iproute2 -y
+sudo mkdir -p /root/backroute
+echo -e '\e[32mPackages & prerequisites installed\e[0m'
+```
+#### IPV4 :
+<details dir="ltr">
+<summary>GRE Method</summary> <br>
+  
+Install the initial prerequisites for GRE mode :
+
+<pre><code>sudo modprobe ip_gre
+echo "ip_gre" | sudo tee /etc/modules-load.d/backroute-gre.conf
+echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/backroute-ipv4.conf
+sudo sysctl --system
+echo -e '\e[32mGRE successfully activated\e[0m'
+</code></pre>
+
+First, we create the configuration file on the Server :
+
+<pre><code>sudo nano /etc/netplan/BackRoute.yaml
+</code></pre>
+
+<pre><code>network:
+  version: 2 #Netplan v2 (do not modify)
+  tunnels:
+    BackRoute:
+      mode: gre
+      local: <IP-SERVER>
+      remote: <IP-REMOTE>
+      addresses:
+        - 10.10.10.1/30
+</code></pre>
+
+</details
