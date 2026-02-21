@@ -31,11 +31,12 @@ Keep in mind that these capabilities only work if your local IPs are not blocked
 > In this project, you can create two types of IP addresses: IPv4 and IPv6. The type of IP depends on the method you choose <br>
 > - `GRE` and `IPIP` create only local `IPv4` addresses.<br>
 > - `SIT` provides only a local `IPv6` address. <br>
+
 > The installation steps are divided into two main sections: IPv4 and IPv6. Each section contains <br>
 > steps specific to the selected method, so you only need to follow the steps for the method you choose. <br>
 > Whichever method you select, you must create the configuration files on both servers and fill in the values. <br>
-
 > The values you are allowed to customize are explained below so you know exactly what each one does : <br>
+
 > `mode` → used to select the tunnel method. <br>
 > `local` → enter the IP of your current server here. <br>
 > `remote` → enter the IP of the remote server here. <br>
