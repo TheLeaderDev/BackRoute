@@ -27,19 +27,21 @@ Keep in mind that these capabilities only work if your local IPs are not blocked
   Fully compatible with Port Forward setups. With some creativity, you can combine BackRoute with other tunneling methods to build powerful solutions or even revive techniques that seem unusable.
 
 ## Before You Install
-> The installation of this tunnel is completely manual there’s no ready made installation script involved. You’ll need to go through the setup steps yourself and configure both servers (`remote` and `client`)      according to the instructions provided below. Don’t worry it’s simpler than you might think.
-> This tunnel ultimately gives you a `local IP` in fact, two “non real” IPs that only the two defined servers recognize, and only they know which real IP is hidden behind them. In total, you can create two types of > IP addresses: `IPv4` and `IPv6`.
-> This entirely depends on the mode you choose:
-> - `GRE` and `IPIP` both create only local `IPv4` addresses.
-> - `SIT` can only provide a local `IPv6` address.
+> The installation of this tunnel is completely manual, and there is no ready-made script available. <br>
+> You need to perform the setup steps yourself and configure both servers (`remote` and `client`) <br>
+> according to the instructions. Don’t worry; the process is simpler than it may seem. <br>
+> In this project, you can create two types of IP addresses: IPv4 and IPv6. The type of IP depends on the method you choose <br>
+> - `GRE` and `IPIP` create only local `IPv4` addresses.<br>
+> - `SIT` provides only a local `IPv6` address. <br>
+> The installation steps are divided into two main sections: IPv4 and IPv6. Each section contains <br>
+> steps specific to the selected method, so you only need to follow the steps for the method you choose. <br>
+> Whichever method you select, you must create the configuration files on both servers and fill in the values. <br>
 
-> If I had to recommend one of the modes, I would definitely suggest GRE.
-> However, as mentioned earlier, the final choice entirely depends on your server’s datacenter, ISP routing policies, intermediate router configurations, and the filtering conditions in your network.
-> In general, the rules and restrictions can vary significantly from one country or network to another, and only through your own testing and evaluation can you determine the most optimal setup.
-
-> I will divide the installation steps into two main categories:
-> IPv4 and IPv6
-> Each category has its own steps depending on the method you choose, and you can follow only the steps related to your selected method.
+> The values you are allowed to customize are explained below so you know exactly what each one does : <br>
+> `mode` → used to select the tunnel method. <br>
+> `local` → enter the IP of your current server here. <br>
+> `remote` → enter the IP of the remote server here. <br>
+> `addresses` → this is the local IP you are creating. You can change it if you are familiar with it; otherwise, do not modify it. <br>
 
 ## Installation and Configuration
 #### First, install the general initial prerequisites :
