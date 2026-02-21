@@ -75,7 +75,7 @@ The values you are allowed to customize, in order, are: mode, local, remote, and
         - 10.10.10.1/30
 </code></pre>
 
-Now, do the same exact configuration file setup for the opposite server as well.
+Now, do the same exact configuration file setup for the opposite server as well :
 
 <pre><code>sudo nano /etc/netplan/BackRoute.yaml
 </code></pre>
@@ -89,6 +89,12 @@ Now, do the same exact configuration file setup for the opposite server as well.
       remote: 0.0.0.0
       addresses:
         - 10.10.10.2/30
+</code></pre>
+
+To apply the changes on both servers, run the following command. After a reboot, the local IPs will be set :
+
+<pre><code>sudo netplan apply
+sudo reboot
 </code></pre>
 
 </details
