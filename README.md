@@ -39,6 +39,7 @@ Keep in mind that these capabilities only work if your local IPs are not blocked
 > `addresses` → this is the local IP you are creating. You can change it if you are familiar with it; otherwise, do not modify it. <br>
 
 ## Installing the initial Prerequisites
+First of all, before anything else and before selecting your desired method, install the prerequisites on both servers using the command below.
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install netplan.io -y
@@ -57,6 +58,7 @@ echo -e '\e[32mPackages & Prerequisites Installed\e[0m'
   
 Install the initial prerequisites for GRE mode :
 
+Execute the following command on both servers to remove potential system limitations and prepare them for deploying the GRE method.
 <pre><code>sudo modprobe ip_gre
 echo "ip_gre" | sudo tee /etc/modules-load.d/backroute-gre.conf
 echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/backroute-ipv4.conf
@@ -71,7 +73,7 @@ First, we create the configuration file on the (Server) :
 
 
 Place these values inside the file and customize them : <br>
-
+Note: After entering the server and client IP addresses in the configuration file, press `Ctrl` + `X` and then `Y` to save the file.
 <pre><code>network:
   version: 2 
   tunnels:
@@ -113,7 +115,7 @@ sudo reboot
 <summary>IPIP Method</summary> <br>
 
 Install the initial prerequisites for IPIP mode :
-
+Execute the following command on both servers to remove potential system limitations and prepare them for deploying the IPIP method.
 <pre><code>sudo modprobe ipip
 lsmod | grep ipip
 echo "ipip" | sudo tee /etc/modules-load.d/backroute-ipip.conf
@@ -128,7 +130,7 @@ First, we create the configuration file on the (Server) :
 </code></pre>
 
 Place these values inside the file and customize them : <br>
-
+Note: After entering the server and client IP addresses in the configuration file, press `Ctrl` + `X` and then `Y` to save the file.
 <pre><code>network:
   version: 2 
   tunnels:
@@ -180,7 +182,7 @@ I’ll put the details in a separate README. If you’re interested in this mode
 <summary>SIT Method</summary> <br>
 
 Install the initial prerequisites for SIT mode :
-
+Execute the following command on both servers to remove potential system limitations and prepare them for deploying the SIT method.
 <pre><code>sudo modprobe sit
 echo "sit" | sudo tee /etc/modules-load.d/backroute-sit.conf
 echo "net.ipv6.conf.all.forwarding=1" | sudo tee /etc/sysctl.d/backroute-ipv6.conf
@@ -194,7 +196,7 @@ First, we create the configuration file on the (Server) :
 </code></pre>
 
 Place these values inside the file and customize them : <br>
-
+Note: After entering the server and client IP addresses in the configuration file, press `Ctrl` + `X` and then `Y` to save the file.
 <pre><code>network:
   version: 2
   tunnels:
@@ -243,7 +245,7 @@ sudo reboot
 ```
 sudo nano /etc/systemd/system/backroute.service
 ```
-First, place the following contents directly into the file without making any changes, then press Ctrl + X + Y :
+First, place the following contents directly into the file without making any changes, then press `Ctrl` + `X` followed by `Y` to save :
 
 ```
 [Unit]
@@ -266,7 +268,7 @@ Now enter the following command to create the BackRoute service start file :
 ```
 sudo nano /root/backroute/backroute-start.sh
 ```
-Place the following contents into the file, then press Ctrl + X + Y :
+Place the following contents into the file, then press `Ctrl` + `X` followed by `Y` to save :
 
 ```
 #!/bin/bash
