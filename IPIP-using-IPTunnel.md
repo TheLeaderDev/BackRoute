@@ -83,3 +83,18 @@ sudo systemctl enable backroute-ipip.service
 sudo systemctl start backroute-ipip.service
 echo -e '\e[32mService BackRoute Successfully Created\e[0m'
 ```
+
+# ## Remove All
+
+```
+sudo systemctl stop backroute-ipip.service
+sudo systemctl disable backroute-ipip.service
+sudo rm /etc/systemd/system/backroute-ipip.service
+sudo systemctl daemon-reload
+sudo systemctl reset-failed
+sudo rm /root/backroute/backroute-ipip-start.sh
+sudo ip link set BackRoute down
+sudo ip tunnel del BackRoute
+sudo rm -rf /root/backroute
+echo -e '\e[31mCompletely Removed\e[0m'
+```
