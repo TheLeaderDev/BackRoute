@@ -281,3 +281,17 @@ By running the following command, a 10-minute cron job will be automatically set
 (crontab -l 2>/dev/null; echo "*/10 * * * * systemctl restart backroute.service") | crontab -
 echo -e '\e[32mCron job BackRoute Successfully Created\e[0m'
 ```
+
+## Remove BackRoute
+
+```
+sudo systemctl stop backroute.service
+sudo systemctl disable backroute.service
+sudo rm -f /etc/systemd/system/backroute.service
+sudo systemctl daemon-reload
+sudo rm -f /etc/netplan/BackRoute.yaml
+sudo rm -f /root/backroute/backroute-start.sh
+crontab -l 2>/dev/null | grep -v 'backroute.service' | crontab -
+sudo rm -rf /root/backroute
+echo -e '\e[31mBackRoute Completely Removed\e[0m'
+```
