@@ -78,13 +78,13 @@ Note: After entering the server and client IP addresses in the configuration fil
   version: 2 
   tunnels:
     BackRoute:
-      mode: gre 
+      mtu: 1500
+      mode: gre
+      dontfragment: true
       local: [SERVER]
       remote: [CLIENT]
       addresses:
         - 10.10.10.1/30
-      mtu: 1500
-      dontfragment: true
 </code></pre>
 
 Now, do the same on the (CLIENT) server.
@@ -96,13 +96,13 @@ Now, do the same on the (CLIENT) server.
   version: 2
   tunnels:
     BackRoute:
+      mtu: 1500
       mode: gre
+      dontfragment: true
       local: [CLIENT]
       remote: [SERVER]
       addresses:
         - 10.10.10.2/30
-      mtu: 1500
-      dontfragment: true
 </code></pre>
 
 To apply the changes on both servers, run the following command. After a reboot, the local IPs will be set :
@@ -139,13 +139,13 @@ Note: After entering the server and client IP addresses in the configuration fil
   version: 2 
   tunnels:
     BackRoute:
-      mode: ipip 
+      mtu: 1500
+      mode: ipip
+      dontfragment: true
       local: [SERVER]
       remote: [CLIENT]
       addresses:
         - 10.10.10.1/30
-      mtu: 1500
-      dontfragment: true
 </code></pre>
 
 Now, do the same on the (CLIENT) server.
@@ -157,13 +157,13 @@ Now, do the same on the (CLIENT) server.
   version: 2
   tunnels:
     BackRoute:
+      mtu: 1500
       mode: ipip
+      dontfragment: true
       local: [CLIENT]
       remote: [SERVER]
       addresses:
         - 10.10.10.2/30
-      mtu: 1500
-      dontfragment: true
 </code></pre>
 
 To apply the changes on both servers, run the following command. After a reboot, the local IPs will be set :
@@ -209,12 +209,13 @@ Note: After entering the server and client IP addresses in the configuration fil
   version: 2
   tunnels:
     BackRoute:
+      mtu: 1500
       mode: sit
+      dontfragment: true
       local: [SERVER]
       remote: [CLIENT]
       addresses:
         - 23e7:dc8:9a0::1/64
-      mtu: 1500
 </code></pre>
 
 Now, do the same on the (CLIENT) server.
@@ -226,12 +227,13 @@ Now, do the same on the (CLIENT) server.
   version: 2
   tunnels:
     BackRoute:
+      mtu: 1500
       mode: sit
+      dontfragment: true
       local: [CLIENT]
       remote: [SERVER]
       addresses:
         - 23e7:dc8:9a0::2/64  
-      mtu: 1500
 </code></pre>
 
 To apply the changes on both servers, run the following command. After a reboot, the local IPs will be set :
