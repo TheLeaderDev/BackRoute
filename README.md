@@ -299,6 +299,7 @@ Enable the service :
 sudo systemctl daemon-reload
 sudo systemctl enable backroute.service
 sudo systemctl start backroute.service
+sudo systemctl status backroute.service
 echo -e '\e[32mService BackRoute Successfully Created\e[0m'
 ```
 
