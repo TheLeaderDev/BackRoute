@@ -1,14 +1,10 @@
 # BackRoute
-Welcome to the `BackRoute` project! <br>
-BackRoute is a lightweight and reliable solution to create a `tunnel` between two servers <br>
-using `IPv4` and `IPv6`, supporting `GRE`, `IPIP`, or `SIT`. It is designed to provide a secure <br>
-and stable connection across different networks, bypass restrictions, and keep data transfer fast and steady. <br>
+Welcome to the `BackRoute` project!
+BackRoute is a lightweight and reliable solution to create a tunnel between two servers using `IPv4` and `IPv6`, supporting `GRE`, `IPIP`, or `SIT`. This project runs on Netplan and establishes a connection between two servers with a simple configuration. Its goal is to provide a secure and stable connection across different networks, bypass restrictions, and keep data transfer fast and steady.
 
-BackRoute creates a Layer 3 tunnel between a client server and a remote server using local IPs. By default, <br>
-it does not support Port Forwarding and simply provides a secure path for data transfer. However, with your creativity, <br>
-you can combine it with advanced tunneling tools and Port Forward setups to build a flexible and powerful system. <br>
+BackRoute creates a Layer 3 tunnel between the `SERVER` and a `CLIENT` server using local IPs. By default, this tunnel does not support Port Forwarding and only provides a secure path for data transfer. However, with your creativity, you can combine it with advanced tunneling tools and Port Forward setups to build a flexible and powerful system.
 
-Keep in mind that these capabilities only work if your local IPs are not blocked by ISPs, network routers, or filtering systems.
+Keep in mind that these capabilities only work if your local IPs are not blocked by ISPs, network Routers, or filtering systems.
 
 ## Features
 - **Local IP–Based Tunnel** <br> 
@@ -26,7 +22,7 @@ Keep in mind that these capabilities only work if your local IPs are not blocked
 
 ## Before You Install
 > The installation of this tunnel is completely manual, and there is no ready-made script available. <br>
-> You need to perform the setup steps yourself and configure both servers (`remote` and `client`) <br>
+> You need to perform the setup steps yourself and configure both servers (`SERVER` and `CLIENT`) <br>
 > according to the instructions. Don’t worry; the process is simpler than it may seem. <br>
 > In this project, you can create two types of IP addresses: IPv4 and IPv6. The type of IP depends on the method you choose <br>
 > - `GRE` and `IPIP` create only local `IPv4` addresses.<br>
