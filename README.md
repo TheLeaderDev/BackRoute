@@ -161,9 +161,17 @@ To apply the changes on both servers, run the following command. After a reboot,
 sudo reboot
 </code></pre>
 
-</details
-   
 <br>
+
+⚠️ If IPIP on Netplan doesn’t work for you, an alternative is to create it directly. <br>
+I’ll put the details in a separate README. If you’re interested in this mode, you can try that method as well. <br>
+
+🔗 Click the link below:
+
+</details
+
+<br>
+<br> 
 
 ### IPV6 :
 
@@ -218,6 +226,10 @@ To apply the changes on both servers, run the following command. After a reboot,
 <pre><code>sudo netplan apply
 sudo reboot
 </code></pre>
+
+<br>
+
+⚠️ Remember, for the SIT method to work, IPv6 must not be blocked by ISPs, routers, or the datacenter.
 
 </details
 
