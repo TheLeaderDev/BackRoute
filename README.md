@@ -83,6 +83,8 @@ Note: After entering the server and client IP addresses in the configuration fil
       remote: [CLIENT]
       addresses:
         - 10.10.10.1/30
+      mtu: 1500
+      dontfragment: true
 </code></pre>
 
 Now, do the same on the (CLIENT) server.
@@ -99,6 +101,8 @@ Now, do the same on the (CLIENT) server.
       remote: [SERVER]
       addresses:
         - 10.10.10.2/30
+      mtu: 1500
+      dontfragment: true
 </code></pre>
 
 To apply the changes on both servers, run the following command. After a reboot, the local IPs will be set :
@@ -140,6 +144,8 @@ Note: After entering the server and client IP addresses in the configuration fil
       remote: [CLIENT]
       addresses:
         - 10.10.10.1/30
+      mtu: 1500
+      dontfragment: true
 </code></pre>
 
 Now, do the same on the (CLIENT) server.
@@ -156,6 +162,8 @@ Now, do the same on the (CLIENT) server.
       remote: [SERVER]
       addresses:
         - 10.10.10.2/30
+      mtu: 1500
+      dontfragment: true
 </code></pre>
 
 To apply the changes on both servers, run the following command. After a reboot, the local IPs will be set :
@@ -206,6 +214,7 @@ Note: After entering the server and client IP addresses in the configuration fil
       remote: [CLIENT]
       addresses:
         - 23e7:dc8:9a0::1/64
+      mtu: 1500
 </code></pre>
 
 Now, do the same on the (CLIENT) server.
@@ -221,7 +230,8 @@ Now, do the same on the (CLIENT) server.
       local: [CLIENT]
       remote: [SERVER]
       addresses:
-        - 23e7:dc8:9a0::2/64   
+        - 23e7:dc8:9a0::2/64  
+      mtu: 1500
 </code></pre>
 
 To apply the changes on both servers, run the following command. After a reboot, the local IPs will be set :
