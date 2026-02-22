@@ -310,7 +310,10 @@ crontab -l 2>/dev/null | grep -v 'backroute.service' | crontab -
 sudo rm -rf /root/backroute
 echo -e '\e[31mBackRoute Completely Removed\e[0m'
 ```
+<br>
 
+# Give a Star
+If you liked it, supporting me is completely free — just give this project a Star ⭐
 
 <div class="markdown-heading" dir="auto">
         <h2 class="heading-element" dir="auto">
