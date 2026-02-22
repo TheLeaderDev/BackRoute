@@ -114,6 +114,7 @@ sudo reboot
 Install the initial prerequisites for IPIP mode :
 
 <pre><code>sudo modprobe ipip
+lsmod | grep ipip
 echo "ipip" | sudo tee /etc/modules-load.d/backroute-ipip.conf
 echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/backroute-ipip.conf
 sudo sysctl --system
