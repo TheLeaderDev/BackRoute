@@ -38,8 +38,7 @@ Keep in mind that these capabilities only work if your local IPs are not blocked
 > `remote` → enter the IP of the remote server here. <br>
 > `addresses` → this is the local IP you are creating. You can change it if you are familiar with it; otherwise, do not modify it. <br>
 
-## Installation and Configuration
-#### First, install the general initial prerequisites :
+## Installing the initial Prerequisites
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install netplan.io -y
@@ -47,8 +46,10 @@ sudo apt-get install iproute2 -y
 sudo mkdir -p /root/backroute
 echo -e '\e[32mPackages & Prerequisites Installed\e[0m'
 ```
+## Configuration of both Servers
+### Select your preferred Method :
 
-## Select your preferred Method
+<br>
 
 ### IPV4 :
 <details dir="ltr">
