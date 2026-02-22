@@ -166,8 +166,8 @@ sudo reboot
 
 <br>
 
-⚠️ If IPIP on Netplan doesn’t work for you, an alternative is to create it directly using ip tunnel.
-I’ll put the details in a separate README. If you’re interested in this mode, you can try that method as well. <br>
+⚠️ If IPIP on `Netplan` doesn’t work for you, an alternative is to create it directly using `IP Tunnel`.
+I’ll put the details in a separate `README`. If you’re interested in this mode, you can try that method as well. <br>
 
 <a align="left" href="https://github.com/TheLeaderDev/BackRoute/blob/main/IPTunnel.md">🔗 Click the link below</a>
 
