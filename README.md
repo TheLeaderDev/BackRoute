@@ -45,7 +45,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install netplan.io -y
 sudo apt-get install iproute2 -y
 sudo mkdir -p /root/backroute
-echo -e '\e[32mPackages & prerequisites installed\e[0m'
+echo -e '\e[32mPackages & Prerequisites Installed\e[0m'
 ```
 
 ## Select your preferred Method
@@ -60,7 +60,7 @@ Install the initial prerequisites for GRE mode :
 echo "ip_gre" | sudo tee /etc/modules-load.d/backroute-gre.conf
 echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/backroute-ipv4.conf
 sudo sysctl --system
-echo -e '\e[32mGRE successfully activated\e[0m'
+echo -e '\e[32mGRE Successfully Activated\e[0m'
 </code></pre>
 
 First, we create the configuration file on the (Server) :
@@ -117,7 +117,7 @@ Install the initial prerequisites for IPIP mode :
 echo "ipip" | sudo tee /etc/modules-load.d/backroute-ipip.conf
 echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/backroute-ipip.conf
 sudo sysctl --system
-echo -e '\e[32mIPIP successfully activated\e[0m'
+echo -e '\e[32mIPIP Successfully Activated\e[0m'
 </code></pre>
 
 First, we create the configuration file on the (Server) :
@@ -175,7 +175,7 @@ Install the initial prerequisites for SIT mode :
 echo "sit" | sudo tee /etc/modules-load.d/backroute-sit.conf
 echo "net.ipv6.conf.all.forwarding=1" | sudo tee /etc/sysctl.d/backroute-ipv6.conf
 sudo sysctl --system
-echo -e '\e[32mSIT successfully activated\e[0m'
+echo -e '\e[32mSIT Successfully Activated\e[0m'
 </code></pre>
 
 First, we create the configuration file on the (Server) :
@@ -269,7 +269,7 @@ Enable the service :
 sudo systemctl daemon-reload
 sudo systemctl enable backroute.service
 sudo systemctl start backroute.service
-echo -e '\e[32mBackRoute successfully created\e[0m'
+echo -e '\e[32mService BackRoute Successfully Created\e[0m'
 ```
 
 ## Creating a Cron Job (Optional)
@@ -278,5 +278,5 @@ By running the following command, a 10-minute cron job will be automatically set
 
 ```
 (crontab -l 2>/dev/null; echo "*/10 * * * * systemctl restart backroute.service") | crontab -
-echo -e '\e[32mCron job successfully created\e[0m'
+echo -e '\e[32mCron job BackRoute Successfully Created\e[0m'
 ```
