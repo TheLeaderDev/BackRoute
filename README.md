@@ -310,3 +310,41 @@ crontab -l 2>/dev/null | grep -v 'backroute.service' | crontab -
 sudo rm -rf /root/backroute
 echo -e '\e[31mBackRoute Completely Removed\e[0m'
 ```
+
+
+<div class="markdown-heading" dir="auto">
+        <h2 class="heading-element" dir="auto">
+            <a href="https://github.com/Amir-Hosein-Amiri">
+                <img target="_blank" src="https://amir8218.ir/GitHub/SVG/Follow-Me.svg" alt="Follow Me :">
+            </a>
+        </h2>
+        <a id="user-content--socials" class="anchor" aria-label="Permalink: 🌐 Socials:" href="https://github.com/Amir-Hosein-Amiri">
+            <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 
+                         .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 
+                         1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83
+                         l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042
+                         Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018
+                         .751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95
+                         l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042
+                         .751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0
+                         l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+                </path>
+            </svg>
+        </a>
+    </div>
+
+<p dir="auto">
+        <!-- <a href="https://wa.me/+98" rel="nofollow">
+            <img src="https://img.shields.io/badge/WhatsApp-url?style=for-the-badge&logo=WhatsApp&logoColor=%2325D366&color=%23082032" alt="WhatsApp" style="max-width: 100%;">
+        </a> -->
+        <a target="_blank" href="https://www.instagram.com/TheLeaderDev" rel="nofollow">
+            <img src="https://img.shields.io/badge/instagram-%23082032?style=for-the-badge&logo=instagram&logoColor=%23FD0AB6&color=%23082032" alt="Instagram" style="max-width: 100%;">
+        </a>
+        <a target="_blank" href="https://t.me/TheLeaderDev" rel="nofollow">
+            <img src="https://img.shields.io/badge/telegram-url?style=for-the-badge&logo=telegram&logoColor=%232CA5E0&color=%23082032" alt="telegram" style="max-width: 100%;">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/TheLeaderDev" rel="nofollow">
+            <img src="https://amir8218.ir/GitHub/Logo/Profiles/LINKEDIN%20.svg" alt="LinkedIn" style="max-width: 100%;">
+        </a>
+    </p>
