@@ -67,7 +67,7 @@ sudo sysctl --system
 echo -e '\e[32mGRE successfully activated\e[0m'
 </code></pre>
 
-First, we create the configuration file on the Server :
+First, we create the configuration file on the (Server) :
 
 <pre><code>sudo nano /etc/netplan/BackRoute.yaml
 </code></pre>
@@ -80,13 +80,13 @@ Place these values inside the file and customize them : <br>
   tunnels:
     BackRoute:
       mode: gre 
-      local: 0.0.0.0
-      remote: 0.0.0.0
+      local: [SERVER]
+      remote: [CLIENT]
       addresses:
         - 10.10.10.1/30
 </code></pre>
 
-Now, do the same exact configuration file setup for the opposite server as well :
+Now, do the same on the (CLIENT) server.
 
 <pre><code>sudo nano /etc/netplan/BackRoute.yaml
 </code></pre>
@@ -96,8 +96,8 @@ Now, do the same exact configuration file setup for the opposite server as well 
   tunnels:
     BackRoute:
       mode: gre
-      local: 0.0.0.0
-      remote: 0.0.0.0
+      local: [CLIENT]
+      remote: [SERVER]
       addresses:
         - 10.10.10.2/30
 </code></pre>
@@ -114,16 +114,114 @@ sudo reboot
 
 <details dir="ltr">
 <summary>IPIP Method</summary> <br>
-...
+
+Install the initial prerequisites for IPIP mode :
+
+<pre><code>sudo modprobe ipip
+echo "ipip" | sudo tee /etc/modules-load.d/backroute-ipip.conf
+echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/backroute-ipip.conf
+sudo sysctl --system
+echo -e '\e[32mIPIP successfully activated\e[0m'
+</code></pre>
+
+First, we create the configuration file on the (Server) :
+
+<pre><code>sudo nano /etc/netplan/BackRoute.yaml
+</code></pre>
+
+Place these values inside the file and customize them : <br>
+
+<pre><code>network:
+  version: 2 
+  tunnels:
+    BackRoute:
+      mode: ipip 
+      local: [SERVER]
+      remote: [CLIENT]
+      addresses:
+        - 10.10.10.1/30
+</code></pre>
+
+Now, do the same on the (CLIENT) server.
+
+<pre><code>sudo nano /etc/netplan/BackRoute.yaml
+</code></pre>
+
+<pre><code>network:
+  version: 2
+  tunnels:
+    BackRoute:
+      mode: ipip
+      local: [CLIENT]
+      remote: [SERVER]
+      addresses:
+        - 10.10.10.2/30
+</code></pre>
+
+To apply the changes on both servers, run the following command. After a reboot, the local IPs will be set :
+
+<pre><code>sudo netplan apply
+sudo reboot
+</code></pre>
+
 </details
-  
+   
 <br>
 
 ### IPV6 :
 
 <details dir="ltr">
 <summary>SIT Method</summary> <br>
-...
+
+Install the initial prerequisites for SIT mode :
+
+<pre><code>sudo modprobe sit
+echo "sit" | sudo tee /etc/modules-load.d/backroute-sit.conf
+echo "net.ipv6.conf.all.forwarding=1" | sudo tee /etc/sysctl.d/backroute-ipv6.conf
+sudo sysctl --system
+echo -e '\e[32mSIT successfully activated\e[0m'
+</code></pre>
+
+First, we create the configuration file on the (Server) :
+
+<pre><code>sudo nano /etc/netplan/BackRoute.yaml
+</code></pre>
+
+Place these values inside the file and customize them : <br>
+
+<pre><code>network:
+  version: 2
+  tunnels:
+    BackRoute:
+      mode: sit
+      local: [SERVER]
+      remote: [CLIENT]
+      addresses:
+        - 23e7:dc8:9a0::1/64
+</code></pre>
+
+Now, do the same on the (CLIENT) server.
+
+<pre><code>sudo nano /etc/netplan/BackRoute.yaml
+</code></pre>
+
+<pre><code>network:
+  version: 2
+  tunnels:
+    BackRoute:
+      mode: sit
+      local: [CLIENT]
+      remote: [SERVER]
+      addresses:
+        - 23e7:dc8:9a0::2/64   
+</code></pre>
+
+To apply the changes on both servers, run the following command. After a reboot, the local IPs will be set :
+
+<pre><code>sudo netplan apply
+sudo reboot
+</code></pre>
+
 </details
 
 <br> <br> 
