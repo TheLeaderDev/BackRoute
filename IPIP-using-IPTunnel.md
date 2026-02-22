@@ -84,7 +84,7 @@ sudo systemctl start backroute-ipip.service
 echo -e '\e[32mService BackRoute Successfully Created\e[0m'
 ```
 
-# ## Remove All
+# Remove All
 
 ```
 sudo systemctl stop backroute-ipip.service
