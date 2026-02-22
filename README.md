@@ -163,7 +163,7 @@ sudo reboot
 
 <br>
 
-⚠️ If IPIP on Netplan doesn’t work for you, an alternative is to create it directly. <br>
+⚠️ If IPIP on Netplan doesn’t work for you, an alternative is to create it directly using ip tunnel.
 I’ll put the details in a separate README. If you’re interested in this mode, you can try that method as well. <br>
 
 🔗 Click the link below:
