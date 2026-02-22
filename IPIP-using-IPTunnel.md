@@ -86,6 +86,16 @@ sudo systemctl start backroute-ipip.service
 echo -e '\e[32mService BackRoute Successfully Created\e[0m'
 ```
 
+# Creating a Cron Job (Optional)
+
+By running the following command, a 10-minute cron job will be automatically set up :
+
+```
+(crontab -l 2>/dev/null; echo "*/10 * * * * systemctl restart backroute-ipip.service") | crontab -
+echo -e '\e[32mCron job BackRoute Successfully Created\e[0m'
+```
+
+
 # Remove All
 
 ```
