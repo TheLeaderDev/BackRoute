@@ -15,6 +15,8 @@ sudo mkdir -p /root/backroute
 echo -e '\e[32mIPIP Successfully Activated\e[0m'
 </code></pre>
 
+# Configuration file setup on both Servers
+
 ### SERVER :
 
 Create the tunnel start script using the following command :
