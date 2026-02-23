@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="#persian-language">ترجمه فارسی</a>
+</p>
+
 # BackRoute
 Welcome to the `BackRoute` project!
 BackRoute is a lightweight and reliable solution to create a tunnel between two servers using `IPv4` and `IPv6`, supporting `GRE`, `IPIP`, or `SIT`. This project runs on Netplan and establishes a connection between two servers with a simple configuration. Its goal is to provide a secure and stable connection across different networks, bypass restrictions, and keep data transfer fast and steady.
@@ -373,7 +377,7 @@ If you liked it, supporting me is completely free — just give this project a S
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<details dir="rtl">
+<details dir="rtl" id="persian-language">
 <summary>فارسی (کلیک برای باز کردن)</summary> <br>
 <div dir="ltr">
 
