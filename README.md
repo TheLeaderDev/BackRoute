@@ -4,7 +4,7 @@
 
 # BackRoute
 Welcome to the `BackRoute` project!
-BackRoute is a lightweight and reliable solution to create a tunnel between two servers using `IPv4` and `IPv6`, supporting `GRE`, `IPIP`, or `SIT`. This project runs on Netplan and establishes a connection between two servers with a simple configuration. Its goal is to provide a secure and stable connection across different networks, bypass restrictions, and keep data transfer fast and steady.
+BackRoute is a lightweight and reliable solution to create a tunnel between two servers using `IPv4` and `IPv6`, supporting `GRE`, `IPIP`, or `SIT`. This project runs on `Netplan` and establishes a connection between two servers with a simple configuration. Its goal is to provide a secure and stable connection across different networks, bypass restrictions, and keep data transfer fast and steady.
 
 BackRoute creates a Layer 3 tunnel between the `SERVER` and a `CLIENT` server using local IPs. By default, this tunnel does not support Port Forwarding and only provides a secure path for data transfer. However, with your creativity, you can combine it with advanced tunneling tools and Port Forward setups to build a flexible and powerful system.
 
@@ -387,7 +387,7 @@ And if you support me, I’ll add even more methods! ❤️
 <p dir="rtl">
 سلام! به پروژه <code>BackRoute</code> خوش اومدید<br>
 BackRoute یه راهکار سبک و راحت برای درست کردن یه تونل بین دو سروره که هم <code>IPv4</code> و هم <code>IPv6</code> رو ساپورت می‌کنه و می‌تونه <code>GRE</code>، <code>IPIP</code> یا <code>SIT</code> رو راه اندازی کنه.<br>
-با یه تنظیم ساده، می‌تونید دو سرور رو بهم وصل کنید. هدفش اینه که یه اتصال امن و پایدار داشته باشید، محدودیت‌ها رو دور بزنید و سرعت و پایداری خوبی داشته باشید.
+با یه تنظیم ساده، می‌تونید با استفاده از <code>Netplan</code> دو سرور رو بهم وصل کنید. هدفش اینه که یه اتصال امن و پایدار داشته باشید، محدودیت‌ها رو دور بزنید و سرعت و پایداری خوبی داشته باشید.
 </p>
 
 <p dir="rtl">
