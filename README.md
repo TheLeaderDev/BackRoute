@@ -456,13 +456,14 @@ sudo apt-get install iproute2 -y
 sudo mkdir -p /root/backroute
 echo -e '\e[32mPackages & Prerequisites Installed\e[0m'</code></pre>
 
+
 <h2 dir="rtl">پیکربندی سرورها</h2>
 <h3 dir="rtl">انتخاب روش:</h3>
 
 <h3 dir="rtl">IPv4</h3>
 
-<details dir="rtl">
-<summary>روش GRE</summary>
+<details>
+<summary dir="rtl">روش GRE</summary>
 
 <p dir="rtl">
 برای GRE، اول پیش‌نیازها رو نصب کنید تا سیستم آماده باشه:
@@ -519,8 +520,8 @@ network:
 sudo reboot</code></pre>
 </details>
 
-<details dir="rtl">
-<summary>روش IPIP</summary>
+<details>
+<summary dir="rtl">روش IPIP</summary>
 
 <p dir="rtl">
 برای IPIP، اول پیش‌نیازها رو نصب کنید:
@@ -584,8 +585,8 @@ sudo reboot</code></pre>
 
 <h3 dir="rtl">IPv6</h3>
 
-<details dir="rtl">
-<summary>روش SIT</summary>
+<details>
+<summary dir="rtl">روش SIT</summary>
 
 <p dir="rtl">
 برای SIT، اول پیش‌نیازها رو نصب کنید:
