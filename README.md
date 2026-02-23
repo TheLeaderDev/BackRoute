@@ -648,12 +648,19 @@ LimitNOFILE=1048576
 WantedBy=multi-user.target</code></pre>
 
 <p dir="rtl">
-فایل شروع BackRoute رو بسازید:
+حالا این دستور رو بزنید تا فایل اجرای سرویس BackRoute ساخته بشه، بعدش <code>Ctrl</code> + <code>X</code> رو بزنید و در نهایت <code>Y</code> رو فشار بدید تا ذخیره بشه:
 </p>
 
-<pre><code>sudo nano /root/backroute/backroute-start.sh
+<pre><code>sudo nano /root/backroute/backroute-start.sh</code></pre>
+
+<p dir="rtl">
+بعد این محتوا رو داخل فایل بذارید و وقتی تموم شد، اول <code>Ctrl</code> + <code>X</code> رو بزنید و بعدش <code>Y</code> رو فشار بدید تا ذخیره بشه:
+</p>
+
+<pre><code>
 #!/bin/bash
-sudo netplan apply</code></pre>
+sudo netplan apply
+</code></pre>
 
 <p dir="rtl">
 دسترسی‌ها رو بدهید:
