@@ -41,8 +41,6 @@ Keep in mind that these capabilities only work if your local IPs are not blocked
 > `local` → enter the IP of your current server here. <br>
 > `remote` → enter the IP of the remote server here. <br>
 > `addresses` → this is the local IP you are creating. You can change it if you are familiar with it; otherwise, do not modify it. <br>
-> `mtu` → maximum packet size that can pass through this tunnel. Make sure it’s ≤ the physical interface MTU. <br>
-> `dontfragment` → prevents packets larger than MTU from being split; oversized packets will be dropped instead of fragmented.
 
 > ⚠️ BackRoute works best on `Ubuntu 22`. Other versions are not recommended.
 
@@ -86,9 +84,7 @@ Note: After entering the server and client IP addresses in the configuration fil
   version: 2 
   tunnels:
     BackRoute:
-      mtu: 1400
       mode: gre
-      dontfragment: true
       local: [SERVER]
       remote: [CLIENT]
       addresses:
@@ -104,9 +100,7 @@ Now, do the same on the (CLIENT) server.
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1400
       mode: gre
-      dontfragment: true
       local: [CLIENT]
       remote: [SERVER]
       addresses:
@@ -147,9 +141,7 @@ Note: After entering the server and client IP addresses in the configuration fil
   version: 2 
   tunnels:
     BackRoute:
-      mtu: 1400
       mode: ipip
-      dontfragment: true
       local: [SERVER]
       remote: [CLIENT]
       addresses:
@@ -165,9 +157,7 @@ Now, do the same on the (CLIENT) server.
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1400
       mode: ipip
-      dontfragment: true
       local: [CLIENT]
       remote: [SERVER]
       addresses:
@@ -217,9 +207,7 @@ Note: After entering the server and client IP addresses in the configuration fil
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1400
       mode: sit
-      dontfragment: true
       local: [SERVER]
       remote: [CLIENT]
       addresses:
@@ -235,9 +223,7 @@ Now, do the same on the (CLIENT) server.
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1400
       mode: sit
-      dontfragment: true
       local: [CLIENT]
       remote: [SERVER]
       addresses:
@@ -436,8 +422,6 @@ BackRoute یه راهکار سبک و راحت برای درست کردن یه <
 <li><code>local</code> → آدرس IP سرور خودتون.</li>
 <li><code>remote</code> → آدرس IP سرور دیگه.</li>
 <li><code>addresses</code> → همون IP محلی که می‌سازید. اگه می‌خواید تغییر بدید، تغییر بدید؛ وگرنه دست نزنید.</li>
-<li><code>mtu</code> → حداکثر اندازه بسته که از تونل رد می‌شه. مطمئن شید کوچیک تر از MTU اینترفیس فیزیکی باشه.</li>
-<li><code>dontfragment</code> → جلوی تقسیم بسته‌های بزرگ‌تر از MTU رو می‌گیره؛ بسته‌های بزرگ حذف می‌شن و تقسیم نمی‌شن.</li>
 </ul>
 
 <p dir="rtl">
@@ -489,9 +473,7 @@ echo -e '\e[32mGRE Successfully Activated\e[0m'</code></pre>
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1400
       mode: gre
-      dontfragment: true
       local: [SERVER]
       remote: [CLIENT]
       addresses:
@@ -504,9 +486,7 @@ network:
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1400
       mode: gre
-      dontfragment: true
       local: [CLIENT]
       remote: [SERVER]
       addresses:
@@ -543,9 +523,7 @@ network:
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1400
       mode: ipip
-      dontfragment: true
       local: [SERVER]
       remote: [CLIENT]
       addresses:
@@ -560,9 +538,7 @@ network:
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1400
       mode: ipip
-      dontfragment: true
       local: [CLIENT]
       remote: [SERVER]
       addresses:
