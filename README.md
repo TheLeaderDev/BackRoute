@@ -33,12 +33,12 @@ Keep in mind that these capabilities only work if your local IPs are not blocked
 > Whichever method you select, you must create the configuration files on both servers and fill in the values. <br>
 > The values you are allowed to customize are explained below so you know exactly what each one does : <br>
 
-`mode` → used to select the tunnel method.
-`local` → enter the IP of your current server here.
-`remote` → enter the IP of the remote server here.
-`addresses` → this is the local IP you are creating. You can change it if you are familiar with it; otherwise, do not modify it.
-`mtu` → maximum packet size that can pass through this tunnel. Make sure it’s ≤ the physical interface MTU.
-`dontfragment` → prevents packets larger than MTU from being split; oversized packets will be dropped instead of fragmented.
+> `mode` → used to select the tunnel method. <br>
+> `local` → enter the IP of your current server here. <br>
+> `remote` → enter the IP of the remote server here. <br>
+> `addresses` → this is the local IP you are creating. You can change it if you are familiar with it; otherwise, do not modify it. <br>
+> `mtu` → maximum packet size that can pass through this tunnel. Make sure it’s ≤ the physical interface MTU. <br>
+> `dontfragment` → prevents packets larger than MTU from being split; oversized packets will be dropped instead of fragmented.
 
 ## Installing the initial Prerequisites
 First of all, before anything else and before selecting your desired method, install the prerequisites on both servers using the command below.
