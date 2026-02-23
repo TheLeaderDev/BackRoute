@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="#persian-language">ترجمه فارسی</a>
+</p>
+
 # IPIP using IP Tunnel
 
 To set up IPIP on an IP Tunnel,
@@ -113,7 +117,7 @@ echo -e '\e[31mCompletely Removed\e[0m'
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<details dir="rtl">
+<details dir="rtl" id="persian-language">
 <summary>فارسی (کلیک برای باز کردن)</summary> <br>
 <div dir="ltr">
 
