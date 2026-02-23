@@ -377,11 +377,11 @@ If you liked it, supporting me is completely free — just give this project a S
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<details dir="rtl" >
+<details dir="rtl" id="persian-language">
 <summary>فارسی (کلیک برای باز کردن)</summary> <br>
 <div dir="ltr">
 
-<h1 dir="rtl" id="persian-language">BackRoute</h1>
+<h1 dir="rtl">BackRoute</h1>
 
 <p dir="rtl">
 به پروژه <code>BackRoute</code> خوش آمدید!<br>
