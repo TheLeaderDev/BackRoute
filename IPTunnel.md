@@ -124,8 +124,8 @@ echo -e '\e[31mCompletely Removed\e[0m'
 <h1 dir="rtl">IPIP با استفاده از IP Tunnel</h1>
 
 <p dir="rtl">
-برای راه‌اندازی IPIP روی IP Tunnel، مراحل ساده‌تر هستند.  
-فقط دستورالعمل‌های زیر را دنبال کنید.
+برای راه‌اندازی IPIP روی IP Tunnel، کار خیلی ساده تره  
+فقط کافیه مراحل زیر رو دنبال کنید.
 </p>
 
 <h2 dir="rtl">نصب پیش‌نیازهای اولیه برای IPIP</h2>
@@ -141,13 +141,13 @@ echo -e '\e[32mIPIP Successfully Activated\e[0m'</code></pre>
 
 <h3 dir="rtl">SERVER :</h3>
 <p dir="rtl">
-اسکریپت شروع تونل را با دستور زیر ایجاد کنید:
+اسکریپت شروع تونل رو با این دستور بسازید:
 </p>
 
 <pre><code>sudo nano /root/backroute/backroute-ipip-start.sh</code></pre>
 
 <p dir="rtl">
-حال کدهای اسکریپت را داخل فایل قرار داده، در صورت نیاز مقادیر را تغییر دهید و سپس <code>Ctrl + X</code> و <code>Y</code> را فشار دهید:
+بعد کدهای زیر رو داخل فایل بذارید، در صورت نیاز مقادیر رو تغییر بدید و بعد <code>Ctrl + X</code> و <code>Y</code> بزنید:
 </p>
 
 <pre><code>sudo ip tunnel add BackRoute mode ipip local [SERVER_IP] remote [CLIENT_IP] ttl 255
@@ -165,13 +165,13 @@ sudo ip addr add 10.10.10.2/30 dev BackRoute</code></pre>
 <h2 dir="rtl">ایجاد فایل سرویس</h2>
 
 <p dir="rtl">
-روی هر دو سرور ابتدا فایل سرویس را ایجاد کنید:
+روی هر دو سرور اول فایل سرویس رو بسازید:
 </p>
 
 <pre><code>sudo nano /root/backroute/backroute-ipip-start.sh</code></pre>
 
 <p dir="rtl">
-محتوای زیر را بدون تغییر داخل فایل قرار دهید و سپس <code>Ctrl + X</code> و <code>Y</code> را فشار دهید:
+این محتوا رو بدون تغییر داخل فایل بذارید و بعد <code>Ctrl + X</code> و <code>Y</code> بزنید:
 </p>
 
 <pre><code>[Unit]
@@ -189,13 +189,13 @@ LimitNOFILE=1048576
 WantedBy=multi-user.target</code></pre>
 
 <p dir="rtl">
-دسترسی‌های لازم را به فایل بدهید:
+حالا دسترسی‌های لازم رو به فایل بدید:
 </p>
 
 <pre><code>sudo chmod +x /root/backroute/backroute-ipip-start.sh</code></pre>
 
 <p dir="rtl">
-سرویس را فعال کنید:
+سرویس رو فعال کنید:
 </p>
 
 <pre><code>sudo systemctl daemon-reload
@@ -206,7 +206,7 @@ echo -e '\e[32mService BackRoute Successfully Created\e[0m'</code></pre>
 <h2 dir="rtl">ایجاد کران جاب (اختیاری)</h2>
 
 <p dir="rtl">
-با اجرای دستور زیر، یک کران جاب هر ۱۰ دقیقه یک‌بار سرویس BackRoute را ریستارت می‌کند:
+با این دستور، کران جاب هر ۱۰ دقیقه یک‌بار سرویس BackRoute رو ریستارت می‌کنه:
 </p>
 
 <pre><code>(crontab -l 2>/dev/null; echo "*/10 * * * * systemctl restart backroute-ipip.service") | crontab -
