@@ -40,6 +40,8 @@ Keep in mind that these capabilities only work if your local IPs are not blocked
 > `mtu` → maximum packet size that can pass through this tunnel. Make sure it’s ≤ the physical interface MTU. <br>
 > `dontfragment` → prevents packets larger than MTU from being split; oversized packets will be dropped instead of fragmented.
 
+> ⚠️ BackRoute works best on `Ubuntu 22`. Other versions are not recommended.
+
 ## Installing the initial Prerequisites
 First of all, before anything else and before selecting your desired method, install the prerequisites on both servers using the command below.
 ```
