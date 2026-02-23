@@ -334,7 +334,7 @@ echo -e '\e[31mBackRoute Completely Removed\e[0m'
 <br>
 
 # Give a Star
-If you liked it, supporting me is completely free — just give this project a Star ⭐
+If you liked it, supporting me is completely free — just give this project a Star ⭐ <br>
 And if you support me, I’ll add even more methods! ❤️
 
 <div class="markdown-heading" dir="auto">
@@ -716,7 +716,7 @@ echo -e '\e[31mBackRoute Completely Removed\e[0m'</code></pre>
 <h2 dir="rtl">حمایت از پروژه</h2>
 
 <p dir="rtl">
-اگه این پروژه رو دوست داشتید، حمایت‌تون کاملاً رایگانه — فقط به این پروژه یه ستاره ⭐ بدهید
+اگه این پروژه رو دوست داشتید، حمایت‌تون کاملاً رایگانه — فقط به این پروژه یه ستاره ⭐ بدهید <br>
   اگه از این پروژه خوشتون اومد و حمایت کردید، روش‌های بیشتری هم اضافه می‌کنم بهش! ❤️
 </p>
 
