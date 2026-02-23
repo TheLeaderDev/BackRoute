@@ -578,6 +578,8 @@ sudo reboot</code></pre>
 ⚠️ اگه IPIP روی Netplan جواب نداد، می‌تونید مستقیم از IP Tunnel استفاده کنید. جزئیات تو README جداگانه هست.
 </p>
 
+<a align="left" href="https://github.com/TheLeaderDev/BackRoute/blob/main/IPTunnel.md">🔗 اینجا کلیک کنید</a>
+
 </details>
 
 <h3 dir="rtl">IPv6</h3>
