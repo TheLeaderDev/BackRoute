@@ -86,7 +86,7 @@ Note: After entering the server and client IP addresses in the configuration fil
   version: 2 
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: gre
       dontfragment: true
       local: [SERVER]
@@ -104,7 +104,7 @@ Now, do the same on the (CLIENT) server.
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: gre
       dontfragment: true
       local: [CLIENT]
@@ -147,7 +147,7 @@ Note: After entering the server and client IP addresses in the configuration fil
   version: 2 
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: ipip
       dontfragment: true
       local: [SERVER]
@@ -165,7 +165,7 @@ Now, do the same on the (CLIENT) server.
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: ipip
       dontfragment: true
       local: [CLIENT]
@@ -217,7 +217,7 @@ Note: After entering the server and client IP addresses in the configuration fil
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: sit
       dontfragment: true
       local: [SERVER]
@@ -235,7 +235,7 @@ Now, do the same on the (CLIENT) server.
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: sit
       dontfragment: true
       local: [CLIENT]
@@ -488,7 +488,7 @@ echo -e '\e[32mGRE Successfully Activated\e[0m'</code></pre>
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: gre
       dontfragment: true
       local: [SERVER]
@@ -503,7 +503,7 @@ network:
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: gre
       dontfragment: true
       local: [CLIENT]
@@ -542,7 +542,7 @@ network:
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: ipip
       dontfragment: true
       local: [SERVER]
@@ -559,7 +559,7 @@ network:
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: ipip
       dontfragment: true
       local: [CLIENT]
@@ -606,7 +606,7 @@ network:
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: sit
       dontfragment: true
       local: [SERVER]
@@ -623,7 +623,7 @@ network:
   version: 2
   tunnels:
     BackRoute:
-      mtu: 1500
+      mtu: 1400
       mode: sit
       dontfragment: true
       local: [CLIENT]
