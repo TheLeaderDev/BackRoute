@@ -700,8 +700,7 @@ WantedBy=multi-user.target</code></pre>
 بعد این محتوا رو داخل فایل بذارید و وقتی تموم شد، اول <code>Ctrl</code> + <code>X</code> رو بزنید و بعدش <code>Y</code> رو فشار بدید تا ذخیره بشه:
 </p>
 
-<pre><code>
-#!/bin/bash
+<pre><code>#!/bin/bash
 sudo netplan apply
 </code></pre>
 
