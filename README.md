@@ -69,6 +69,7 @@ Execute the following command on both servers to remove potential system limitat
 echo "ip_gre" | sudo tee /etc/modules-load.d/backroute-gre.conf
 echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/backroute-ipv4.conf
 sudo sysctl --system
+sudo mkdir -p /root/backroute
 echo -e '\e[32mGRE Successfully Activated\e[0m'
 </code></pre>
 
@@ -127,6 +128,7 @@ lsmod | grep ipip
 echo "ipip" | sudo tee /etc/modules-load.d/backroute-ipip.conf
 echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/backroute-ipip.conf
 sudo sysctl --system
+sudo mkdir -p /root/backroute
 echo -e '\e[32mIPIP Successfully Activated\e[0m'
 </code></pre>
 
@@ -193,6 +195,7 @@ Execute the following command on both servers to remove potential system limitat
 echo "sit" | sudo tee /etc/modules-load.d/backroute-sit.conf
 echo "net.ipv6.conf.all.forwarding=1" | sudo tee /etc/sysctl.d/backroute-ipv6.conf
 sudo sysctl --system
+sudo mkdir -p /root/backroute
 echo -e '\e[32mSIT Successfully Activated\e[0m'
 </code></pre>
 
@@ -457,6 +460,7 @@ echo -e '\e[32mPackages & Prerequisites Installed\e[0m'</code></pre>
 echo "ip_gre" | sudo tee /etc/modules-load.d/backroute-gre.conf
 echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/backroute-ipv4.conf
 sudo sysctl --system
+sudo mkdir -p /root/backroute
 echo -e '\e[32mGRE Successfully Activated\e[0m'</code></pre>
 
 <p dir="rtl">
@@ -512,6 +516,7 @@ lsmod | grep ipip
 echo "ipip" | sudo tee /etc/modules-load.d/backroute-ipip.conf
 echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/backroute-ipip.conf
 sudo sysctl --system
+sudo mkdir -p /root/backroute
 echo -e '\e[32mIPIP Successfully Activated\e[0m'</code></pre>
 
 <p dir="rtl">
@@ -572,6 +577,7 @@ sudo reboot</code></pre>
 echo "sit" | sudo tee /etc/modules-load.d/backroute-sit.conf
 echo "net.ipv6.conf.all.forwarding=1" | sudo tee /etc/sysctl.d/backroute-ipv6.conf
 sudo sysctl --system
+sudo mkdir -p /root/backroute
 echo -e '\e[32mSIT Successfully Activated\e[0m'</code></pre>
 
 <p dir="rtl">
