@@ -298,6 +298,27 @@ sudo systemctl status backroute.service
 echo -e '\e[32mService BackRoute Successfully Created\e[0m'
 ```
 
+<br>
+
+<details>
+<summary>Delete and Stop the Service</summary> <br>
+
+If you experience any issues after applying the service, you can remove it using the command below :
+
+```
+sudo systemctl stop backroute.service
+sudo systemctl disable backroute.service
+sudo rm /etc/systemd/system/backroute.service
+sudo systemctl daemon-reload
+sudo systemctl reset-failed
+systemctl status backroute.service
+echo -e '\e[31mService BackRoute Successfully Removed\e[0m'
+```
+
+</details
+
+<br> <br>
+
 ## Creating a Cron Job (Optional)
 
 By running the following command, a 10-minute cron job will be automatically set up :
@@ -306,6 +327,22 @@ By running the following command, a 10-minute cron job will be automatically set
 (crontab -l 2>/dev/null; echo "*/10 * * * * systemctl restart backroute.service") | crontab -
 echo -e '\e[32mCron job BackRoute Successfully Created\e[0m'
 ```
+
+<br>
+
+<details>
+<summary>Delete and Stop the Cron Job</summary> <br>
+
+If you wish to remove the cron job, you can use the command below :
+
+```
+crontab -l | grep -v "systemctl restart backroute.service" | crontab -
+echo -e '\e[31mCron job BackRoute Successfully Removed\e[0m'
+```
+
+</details
+
+<br> <br>
 
 ## Remove BackRoute
 
@@ -684,6 +721,25 @@ sudo systemctl start backroute.service
 sudo systemctl status backroute.service
 echo -e '\e[32mService BackRoute Successfully Created\e[0m'</code></pre>
 
+<br>
+
+<details>
+<summary dir="rtl">حذف و توقف سرویس</summary> <br>
+
+اگه بعد از اعمال سرویس با مشکلی مواجه شدید، می‌تونید با استفاده از دستور زیر اون رو حذف کنید:
+
+<pre><code>sudo systemctl stop backroute.service
+sudo systemctl disable backroute.service
+sudo rm /etc/systemd/system/backroute.service
+sudo systemctl daemon-reload
+sudo systemctl reset-failed
+systemctl status backroute.service
+echo -e '\e[31mService BackRoute Successfully Removed\e[0m'</code></pre>
+
+</details
+
+<br> <br>
+
 <h2 dir="rtl">ایجاد کران جاب (اختیاری)</h2>
 
 <p dir="rtl">
@@ -692,6 +748,20 @@ echo -e '\e[32mService BackRoute Successfully Created\e[0m'</code></pre>
 
 <pre><code>(crontab -l 2>/dev/null; echo "*/10 * * * * systemctl restart backroute.service") | crontab -
 echo -e '\e[32mCron job BackRoute Successfully Created\e[0m'</code></pre>
+
+<br>
+
+<details>
+<summary dir="rtl">حذف و توقف کرون‌جاب</summary> <br>
+
+در صورت تمایل به حذف کرون‌جاب، می‌تونید از دستور زیر استفاده کنید:
+
+<pre><code>crontab -l | grep -v "systemctl restart backroute.service" | crontab -
+echo -e '\e[31mCron job BackRoute Successfully Removed\e[0m'</code></pre>
+
+</details
+
+<br> <br>
 
 <h2 dir="rtl">حذف BackRoute</h2>
 
