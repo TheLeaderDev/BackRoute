@@ -244,7 +244,7 @@ sudo reboot
 
 <br> <br> 
 
-## Creating a System (Mandatory)
+## Creating a System (Optional)
 
 #### On both servers, first run the following command to create the service file :
 
@@ -621,7 +621,7 @@ sudo reboot</code></pre>
 
 </details>
 
-<h2 dir="rtl">ایجاد سرویس سیستم (اجباری)</h2>
+<h2 dir="rtl">ایجاد سرویس سیستم (اختیاری)</h2>
 
 <p dir="rtl">
 روی هر دو سرور، اول فایل سرویس رو بسازید:
