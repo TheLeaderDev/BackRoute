@@ -458,10 +458,10 @@ BackRoute یه راهکار سبک و راحت برای درست کردن یه <
 </p>
 
 <ul dir="rtl">
-<li><code>mode</code> → برای انتخاب روش تونله.</li>
-<li><code>local</code> → آدرس IP سرور خودتون.</li>
-<li><code>remote</code> → آدرس IP سرور دیگه.</li>
-<li><code>addresses</code> → همون IP محلی که می‌سازید. اگه می‌خواید تغییر بدید، تغییر بدید؛ وگرنه دست نزنید.</li>
+<li><code>mode</code> ← برای انتخاب روش تونله.</li>
+<li><code>local</code> ← آدرس IP سرور خودتون.</li>
+<li><code>remote</code> ← آدرس IP سرور دیگه.</li>
+<li><code>addresses</code> ← همون IP محلی که می‌سازید. اگه می‌خواید تغییر بدید، تغییر بدید؛ وگرنه دست نزنید.</li>
 </ul>
 
 <p dir="rtl">
