@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# ============================================================
-#   BackRoute - Panel & Tunnel Manager
-#   Version : Auto-fetched from GitHub
-#   GitHub  : https://github.com/TheLeaderDev/BackRoute
-#   Author  : TheLeaderDev
-# ============================================================
-
 # ─── Fix CRLF issues ───────────────────────────────────────
 if grep -q $'\r' "$0" 2>/dev/null; then
     sed -i 's/\r$//' "$0"
