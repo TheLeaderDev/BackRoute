@@ -52,11 +52,7 @@ Run the following command on both servers:
 curl -Ls https://raw.githubusercontent.com/TheLeaderDev/BackRoute/main/install.sh | sed 's/\r$//' | bash
 ```
 
-After installation, the BackRoute panel will open automatically.
-
-From the panel you can configure your tunnel, edit its settings, check its status, or remove BackRoute completely.
-
-To open the panel again, simply run:
+After installation, simply run the following command to open the BackRoute panel:
 
 ```bash
 BackRoute
