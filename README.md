@@ -215,11 +215,7 @@ BackRoute طوری طراحی شده که کل مراحل نصب و پیکربن
 <pre><code>curl -Ls https://raw.githubusercontent.com/TheLeaderDev/BackRoute/main/install.sh | sed 's/\r$//' | bash</code></pre>
 
 <p dir="rtl">
-بعد از نصب، پنل BackRoute به‌صورت خودکار باز می‌شه.
-</p>
-
-<p dir="rtl">
-برای باز کردن دوباره پنل، کافیه دستور زیر رو اجرا کنید:
+بعد از نصب برای باز کردن پنل BackRoute کافیه دستور زیر رو اجرا کنید:
 </p>
 
 <pre><code>BackRoute</code></pre>
